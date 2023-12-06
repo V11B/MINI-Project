@@ -1,0 +1,119 @@
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#page-header {
+    /* margin-top: 5px; */
+    background-image: url(assest-2/banner/new4.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: white;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178 !important;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600 !important;
+}
+
+#pagination a i {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+/* Products details */
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    font-size: 25px !important;
+    color: #34251f !important;
+    padding: 40px 0 20px 0 !important;
+}
+
+#prodetails .single-pro-details h2 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    color: #34251f !important;
+    font-size: 20px !important;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #EEDDCC;
+    color: #34251f;
+}
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details span {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #34251f !important;
+}

@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: black;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header Start */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #EEDDCC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #34251f;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Hero section */
+#title-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    align-content: center;
+    width: 50%;
+    margin-top: 150px;
+}
+
+#img-top {
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+    align-content: start;
+    width: 50%;
+}
+
+.main-img {
+    border-bottom-left-radius: 150px;
+    margin-left: 1150px;
+    width: 550px;
+    height: 650px;
+}
+
+#hero {
+    background-color: #EEDDCC;
+    height: 841px;
+}
+
+.para-1 {
+    color: #34251f !important;
+    width: 50%;
+    font-family: 'Lato', sans-serif !important;
+    font-size: larger;
+}
+
+#hero h1 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    color: #34251f;
+    font-size: 80px;
+}
+
+#hero {
+    color: #34251f !important;
+    font-family: 'Frank Ruhl Libre', serif !important;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    font-family: 'Lato', sans-serif !important;
+    padding-bottom: 15px;
+    color: #34251f !important;
+}
+
+#hero button {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 20px !important;
+    background-image: url(assest-2/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* Feature */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+/* New Collectuion */
+#New-Collection {
+    text-align: center;
+}
+
+#New-Collection .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#New-Collection h2 {
+    color: #34251f;
+    font-size: 46px !important;
+    font-family: 'Frank Ruhl Libre', serif !important;
+}
+
+#New-Collection p {
+    color: #34251f;
+    font-size: 16px !important;
+    font-family: 'Lato', sans-serif !important;
+}
+
+#New-Collection .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce8d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2sec ease;
+    position: relative;
+}
+
+#New-Collection .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#New-Collection .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#New-Collection .pro .des {
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+#New-Collection .pro .des h5 {
+    color: #34251f !important;
+    font-family: 'Lato', sans-serif !important;
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#New-Collection .pro .des h4 {
+    color: #088178;
+    font-family: 'Lato', sans-serif !important;
+    padding-top: 7px !important;
+    font-size: 15px !important;
+    font-weight: bolder !important;
+}
+
+#New-Collection .pro .des i {
+    color: rgb(243, 181, 25);
+    font-size: 12px;
+}
+
+#New-Collection .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#New-Collection .pro .cart {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #088178;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+/* deals of the day */
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    background-color: #EEDDCC;
+    height: 538px;
+    width: 100%;
+}
+
+#banner h1 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    font-size: 70px !important;
+    margin-top: 70px;
+    margin-left: 50px;
+    color: #34251f !important;
+}
+
+#banner h2 {
+    font-size: large;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400 !important;
+    width: 30% !important;
+    margin-top: 10px;
+    line-height: 25px !important;
+    margin-left: 50px !important;
+}
+
+#banner button {
+    background-color: #34251f;
+    color: #EEDDCC;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 200px;
+    margin-left: 50px;
+    transition: 0.2sec ease;
+    border: none;
+    outline: none;
+}
+
+#banner button:hover {
+    background-color: #cdd4f8;
+    color: #34251f;
+}
+
+#banner img {
+    margin-top: -539px;
+    margin-left: 1200px;
+    width: 30%;
+}
+
+/* Small banner */
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(assest-2/banner/b17.jpg);
+    min-width: 830px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+#sm-banner .banner-box-2 {
+    background-image: url(assest-2/banner/b10.jpg);
+}
+
+#sm-banner h4 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif !important;
+    font-size: 35px !important;
+    font-weight: 300 !important;
+}
+
+#sm-banner h2 {
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif !important;
+    font-size: 50px !important;
+    font-weight: 500 !important;
+}
+
+#sm-banner span {
+    color: white;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding-bottom: 20px;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+/* Text-banner */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(assest-2/banner/b7.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+#banner3 .banner-box-2 {
+    background-image: url(assest-2/banner/b4.jpg);
+}
+
+#banner3 .banner-box-3 {
+    background-image: url(assest-2/banner/b18.jpg);
+}
+
+#banner3 h2 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    color: white !important;
+    font-weight: 900 !important;
+    font-size: 35px !important;
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: bolder !important;
+    font-size: 20px !important;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(assest-2/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #EEDDCC;
+}
+
+#newsletter h4 {
+    font-family: 'Frank Ruhl Libre', serif !important;
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: #34251f;
+}
+
+#newsletter p {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #088178;
+}
+
+#newsletter p span {
+    color: #041e42;
+    font-weight: bold !important;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 20px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+footer .logo {
+    margin-bottom: 40px;
+}
+
+footer h4 {
+    font-size: 14pxpx;
+    padding-bottom: 30px;
+}
+
+footer p {
+    font-size: large13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow .icon a i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1.5px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow .icon a i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* media query */
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -660px;
+        height: 100vh;
+        width: 300px;
+        background-color: #EEDDCC;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+}
+
+
+/* Shop css */
+
+
+/* About css */
